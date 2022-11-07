@@ -9,6 +9,9 @@ import DecorIntersect from 'images/decor-intersect-1.svg'
 import DecorTextUnderline from 'images/text-decore.svg'
 import DecorePlus from 'images/decore-plus.svg'
 import DecorSwirl from 'images/decor-swirl.svg'
+import Facebook from 'images/facebook.svg'
+import Twitter from 'images/twitter.svg'
+import Instagram from 'images/instagram.svg'
 
 export default function Home() {
   return (
@@ -19,7 +22,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className='absolute z-10 w-full py-12'>
+      <div className='absolute z-20 lg:z-10 w-full py-6 lg:py-12'>
         <Header />
       </div>
 
@@ -32,37 +35,37 @@ export default function Home() {
 
         <div className='max-w-7xl mx-auto px-4'>
           <div className='flex'>
-            <div className='w-6/12 pt-52'>
-              <h1 className='text-accent-2 font-bold uppercase text-xl mb-6'>
+            <div className='w-full lg:w-6/12 pt-24 lg:pt-52'>
+              <h1 className='text-accent-2 font-bold uppercase text-sm lg:text-xl mb-3 lg:mb-6'>
                 Best Destinations around the world
               </h1>
-              <h2 className='text-gray-900 font-serif text-[84px] leading-[89px] tracking-tighter mb-8'>
+              <h2 className='text-gray-900 font-serif text-4xl lg:text-[84px] leading-tight lg:leading-[89px] tracking-tighter mb-4 lg:mb-8'>
               News,{" "} 
               <span className='relative'>
                 enjoy
-                <span className='absolute left-0 top-full -mt-8 -ml-4 -z-10'>
-                  <DecorTextUnderline className='w-[385px] h-[12px] fill-accent-2' />
+                <span className='absolute left-0 top-full -mt-3 lg:-mt-8 -ml-4 -z-10'>
+                  <DecorTextUnderline className='w-[100px] lg:w-[385px] h-1 lg:h-[12px] fill-accent-2' />
                 </span>
               </span>{" "}
               and live a new and full news
               </h2>
-              <p className='text-gray-500 max-w-lg leading-8 mb-8'>
+              <p className='text-gray-500 max-w-lg leading-6 lg:leading-8 mb-8 text-sm lg:text-base'>
               Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed listening. Park gate sell they west hard for the.
               </p>
               <div className='flex'>
-                <Link href="/" className='mr-11 bg-accent-1 shadow-accent-1/20 shadow-[0_20px_35px] px-6 py-4 text-white rounded-xl'>
+                <Link href="#section-category" className='mr-6 lg:mr-11 bg-accent-1 shadow-accent-1/20 shadow-[0_20px_35px] px-6 py-4 text-white rounded-xl'>
                   Find out more
                 </Link>
                 <button className='flex items-center'>
                   <span className='mr-6 bg-accent-2 text-white inline-flex items-center justify-center p-4 rounded-full shadow-accent-2/20 shadow-[0_15px_30px]'>
                   <span class="material-icons">play_arrow</span>
                   </span>
-                  <span className='text-gray-500'>Play demo</span>
+                  <span className='hidden lg:block text-gray-500'>Play demo</span>
                 </button>
               </div>
             </div>
 
-            <div className='w-[783px] h-[764] pt-24 relative'>
+            <div className='hidden lg:block w-[783px] h-[764] pt-24 relative'>
               <div className='absolute w-[137px] h-[95px] top-44 left-8 z-30'>
                 <Image 
                   layout="responsive"
@@ -93,18 +96,18 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='mb-32'>
+      <section className='mb-32' id='section-category'>
         <div className='max-w-7xl mx-auto relative px-4'>
           <div className='absolute w-36 h-36 lg:-right-8 -top-10'>
             <DecorePlus className='decore-plus-style-1' />
           </div>
           <div className='text-center flex flex-col mb-16'>
             <h3 className='uppercase mb-2 text-gray-500'>Category</h3>
-            <h3 className='font-serif text-5xl text-gray-900 leading-snug'>We Offer Best Services</h3>
+            <h3 className='font-serif text-4xl lg:text-5xl text-gray-900 leading-tight lg:leading-snug'>We Offer Best Services</h3>
           </div>
 
-          <div className='flex text-gray-900'>
-            <div className='w-3/12 px-8'>
+          <div className='flex flex-wrap gap-y-5 lg:gap-y-0 text-gray-900'>
+            <div className='w-full lg:w-3/12 px-5 lg:px-8'>
               <div className='relative transition-all duration-300 group hover:shadow-great bg-white flex flex-col cursor-pointer items-center justify-center text-center rounded-[36px]'>
                 <div className='relative mb-6 inline-flex h-28'>
                   <div className='z-10 absolute bottom-2 transform -translate-x-2/3 -right-16'>
@@ -118,12 +121,12 @@ export default function Home() {
                   <div className='absolute bottom-0 left-5 transform -translate-x-1/2 bg-accent-4 rounded-tl-lg rounded-tr-md rounded-bl-md rounded-br-2xl w-12 h-12'></div>
                 </div>
                   <h4 className='text-xl mb-3'>Calculated Weather</h4>
-                  <h5 className='px-8 mb-8 text-gray-500'>Built Wicket longer admire do barton vanity itself do in it.</h5>
+                  <h5 className='px-3 lg:px-8 mb-8 text-gray-500'>Built Wicket longer admire do barton vanity itself do in it.</h5>
                 <div className='absolute transition-all duration-300 opacity-0 group-hover:opacity-100 -z-20 bottom-12 group-hover:-bottom-8 left-12 group-hover:-left-8 transform -translete-x-1/2 translete-y-1/2 bg-accent-2 rounded-tl-3xl rounded-br-lg w-28 h-28'></div>
               </div>
             </div>
 
-            <div className='w-3/12 px-8'>
+            <div className='w-full lg:w-3/12 px-5 lg:px-8'>
               <div className='relative transition-all duration-300 group hover:shadow-great bg-white flex flex-col cursor-pointer items-center justify-center text-center rounded-[36px]'>
                 <div className='relative mb-6 inline-flex h-28'>
                   <div className='z-10 absolute -bottom-2 transform -translate-x-1/2 -right-28'>
@@ -137,12 +140,12 @@ export default function Home() {
                   <div className='absolute bottom-0 left-5 transform -translate-x-1/2 bg-accent-4 rounded-tl-lg rounded-tr-md rounded-bl-md rounded-br-2xl w-12 h-12'></div>
                 </div>
                   <h4 className='text-xl mb-3'>Best Flights</h4>
-                  <h5 className='px-8 mb-8 text-gray-500'>Engrossed listening. Park gate sell they west hard for the.</h5>
+                  <h5 className='px-3 lg:px-8 mb-8 text-gray-500'>Engrossed listening. Park gate sell they west hard for the.</h5>
                 <div className='absolute transition-all duration-300 opacity-0 group-hover:opacity-100 -z-20 bottom-12 group-hover:-bottom-8 left-12 group-hover:-left-8 transform -translete-x-1/2 translete-y-1/2 bg-accent-2 rounded-tl-3xl rounded-br-lg w-28 h-28'></div>
               </div>
             </div>
 
-            <div className='w-3/12 px-8'>
+            <div className='w-full lg:w-3/12 px-5 lg:px-8'>
               <div className='relative transition-all duration-300 group hover:shadow-great bg-white flex flex-col cursor-pointer items-center justify-center text-center rounded-[36px]'>
                 <div className='relative mb-6 inline-flex h-28'>
                   <div className='z-10 absolute bottom-2 transform -translate-x-2/3 -right-10'>
@@ -156,12 +159,12 @@ export default function Home() {
                   <div className='absolute bottom-0 left-5 transform -translate-x-1/2 bg-accent-4 rounded-tl-lg rounded-tr-md rounded-bl-md rounded-br-2xl w-12 h-12'></div>
                 </div>
                   <h4 className='text-xl mb-3'>Local Events</h4>
-                  <h5 className='px-8 mb-8 text-gray-500'>Barton vanity itself do in it. Preferd to men it engrossed listening.</h5>
+                  <h5 className='px-3 lg:px-8 mb-8 text-gray-500'>Barton vanity itself do in it. Preferd to men it engrossed listening.</h5>
                 <div className='absolute transition-all duration-300 opacity-0 group-hover:opacity-100 -z-20 bottom-12 group-hover:-bottom-8 left-12 group-hover:-left-8 transform -translete-x-1/2 translete-y-1/2 bg-accent-2 rounded-tl-3xl rounded-br-lg w-28 h-28'></div>
               </div>
             </div>
 
-            <div className='w-3/12 px-8'>
+            <div className='w-full lg:w-3/12 px-5 lg:px-8'>
               <div className='relative transition-all duration-300 group hover:shadow-great bg-white flex flex-col cursor-pointer items-center justify-center text-center rounded-[36px]'>
                 <div className='relative mb-6 inline-flex h-28'>
                   <div className='z-10 absolute bottom-2 transform -translate-x-2/3 -right-16'>
@@ -175,7 +178,7 @@ export default function Home() {
                   <div className='absolute bottom-0 left-5 transform -translate-x-1/2 bg-accent-4 rounded-tl-lg rounded-tr-md rounded-bl-md rounded-br-2xl w-12 h-12'></div>
                 </div>
                   <h4 className='text-xl mb-3'>Customization</h4>
-                  <h5 className='px-8 mb-8 text-gray-500'>We deliver outsourced aviation services for military customers.</h5>
+                  <h5 className='px-3 lg:px-8 mb-8 text-gray-500'>We deliver outsourced aviation services for military customers.</h5>
                 <div className='absolute transition-all duration-300 opacity-0 group-hover:opacity-100 -z-20 bottom-12 group-hover:-bottom-8 left-12 group-hover:-left-8 transform -translete-x-1/2 translete-y-1/2 bg-accent-2 rounded-tl-3xl rounded-br-lg w-28 h-28'></div>
               </div>
             </div>
@@ -188,10 +191,10 @@ export default function Home() {
         <div className='max-w-7xl mx-auto relative px-4'>
           <div className='text-center flex flex-col mb-16'>
             <h3 className='uppercase mb-2 text-gray-500'>Top Selling</h3>
-            <h3 className='font-serif text-5xl text-gray-900 leading-snug'>Top Destinations</h3>
+            <h3 className='font-serif text-4xl lg:text-5xl text-gray-900 leading-tight lg:leading-snug'>Top Destinations</h3>
           </div>
 
-          <div className='flex gap-7 relative justify-center'>
+          <div className='flex flex-wrap gap-7 relative justify-center'>
 
             <div className='absolute w-[96px] h-[252px] bottom-10 right-16'>
               <DecorSwirl className="stroke-gray-500" />
@@ -276,11 +279,11 @@ export default function Home() {
 
       <section className='mb-32'>
         <div className='max-w-7xl mx-auto relative px-4'>
-          <div className='flex items-center'>
-            <div className='w-6/12 pr-28'>
+          <div className='flex flex-wrap items-center'>
+            <div className='w-full lg:w-6/12 pr-0 lg:pr-28 mb-10 lg:mb-0'>
               <div className='flex flex-col mb-16'>
                 <h3 className='uppercase mb-2 text-gray-500'>Easy and Fast</h3>
-                <h3 className='font-serif text-5xl text-gray-900 leading-snug'>Book your next trip in 3 easy steps</h3>
+                <h3 className='font-serif text-4xl lg:text-5xl text-gray-900 leading-tight lg:leading-snug'>Book your next trip in 3 easy steps</h3>
               </div>
               <ul>
                 <li className='flex items-center gap-5 mb-5'>
@@ -314,7 +317,7 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-            <div className='w-6/12'>
+            <div className='w-full lg:w-6/12'>
               <div className='relative flex justify-center'>
                 <div className='z-10 bg-white rounded-3xl shadow-great w-80 p-5'>
                   <div className='relative w-full mb-5'>
@@ -350,7 +353,7 @@ export default function Home() {
                         <span className="material-icons text-accent-8">favorite_border</span>
                     </div>
                 </div>
-                <div className='bg-white shadow-great absolute z-20 bottom-16 right-5 p-3 rounded-xl flex gap-3'>
+                <div className='bg-white shadow-great absolute z-20 -bottom-20 md:bottom-16 -right-4 md:right-5 p-3 rounded-xl flex gap-3'>
                     <div className=''>
                       <Image 
                         layout='fill'
@@ -381,9 +384,9 @@ export default function Home() {
       <Testimonials />
     
       <section className='mb-28'>
-        <div className='max-w-7xl mx-auto'>
-          <div className='flex'>
-            <div className='w-1/5 px-4'>
+        <div className='max-w-full lg:max-w-7xl mx-auto'>
+          <div className='flex flex-wrap gap-y-5'>
+            <div className='w-full lg:w-1/5 px-4'>
               <div className='flex items-center justify-center h-20 p-4 relative grayscale hover:grayscale-0 hover:bg-white transform hover:-translate-y-1 hover:shadow-great rounded-2xl transition-all duration-300'>
               {/* <span class="material-icons">my_location</span> */}
                 <Image
@@ -395,7 +398,7 @@ export default function Home() {
                 />
               </div>
             </div>
-            <div className='w-1/5 px-4'>
+            <div className='w-full lg:w-1/5 px-4'>
               <div className='flex items-center justify-center h-20 p-4 relative grayscale hover:grayscale-0 hover:bg-white transform hover:-translate-y-1 hover:shadow-great rounded-2xl transition-all duration-300'>
               {/* <span class="material-icons">my_location</span> */}
                 <Image
@@ -407,7 +410,7 @@ export default function Home() {
                 />
               </div>
             </div>
-            <div className='w-1/5 px-4'>
+            <div className='w-full lg:w-1/5 px-4'>
               <div className='flex items-center justify-center h-20 p-4 relative grayscale hover:grayscale-0 hover:bg-white transform hover:-translate-y-1 hover:shadow-great rounded-2xl transition-all duration-300'>
               {/* <span class="material-icons">my_location</span> */}
                 <Image
@@ -419,7 +422,7 @@ export default function Home() {
                 />
               </div>
             </div>
-            <div className='w-1/5 px-4'>
+            <div className='w-full lg:w-1/5 px-4'>
               <div className='flex items-center justify-center h-20 p-4 relative grayscale hover:grayscale-0 hover:bg-white transform hover:-translate-y-1 hover:shadow-great rounded-2xl transition-all duration-300'>
               {/* <span class="material-icons">my_location</span> */}
                 <Image
@@ -431,7 +434,7 @@ export default function Home() {
                 />
               </div>
             </div>
-            <div className='w-1/5 px-4'>
+            <div className='w-full lg:w-1/5 px-4'>
               <div className='flex items-center justify-center h-20 p-4 relative grayscale hover:grayscale-0 hover:bg-white transform hover:-translate-y-1 hover:shadow-great rounded-2xl transition-all duration-300'>
               {/* <span class="material-icons">my_location</span> */}
                 <Image
@@ -447,7 +450,143 @@ export default function Home() {
         </div>
       </section>
 
-
+      <section className='pb-5 lg:pb-14 relative overflow-hidden'>
+        <div className='w-60 h-60 rounded-full blur-3xl absolute z-10 -bottom-10 -right-10 bg-accent-3/40'></div>
+        <div className='max-w-full lg:max-w-7xl max-auto relative px-4'>
+          <div className='flex flex-wrap mb-10 lg:mb-12'>
+            <div className='max-w-full lg:w-4/12 px-0 lg:px-4 mb-10 lg:mb-0'>
+              <h6 className='text-4xl lg:text-5xl tracking-tight text-gray-900 mb-5'>
+                Radar Bogor
+              </h6>
+              <p className='text-sm text-gray-500 pr-8'>
+                Book your trip in minute, get full Control for much longer.
+              </p>
+            </div>
+            <div className='w-full lg:w-2/12 px-0 lg:px-4 mb-10 lg:mb-0'>
+              <h6 className='text-xl tracking-tight text-gray-900 mb-5'>
+                Company
+              </h6>
+              <ul className='text-lg text-gray-500 flex flex-col gap-y-2'>
+                <li>
+                  <Link href="/about">
+                    About
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/about">
+                    Carerrs
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/about">
+                    Mobile
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div className='w-full lg:w-2/12 px-0 lg:px-4 mb-10 lg:mb-0'>
+              <h6 className='text-xl tracking-tight text-gray-900 mb-5'>
+                Contact
+              </h6>
+              <ul className='text-lg text-gray-500 flex flex-col gap-y-2'>
+                <li>
+                  <Link href="/about">
+                    Help/FAQ
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/about">
+                    Press
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/about">
+                   Affilates
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div className='w-full lg:w-2/12 px-0 lg:px-4 mb-10 lg:mb-0'>
+              <h6 className='text-xl tracking-tight text-gray-900 mb-5'>
+                More
+              </h6>
+              <ul className='text-lg text-gray-500 flex flex-col gap-y-2'>
+                <li>
+                  <Link href="/about">
+                  Airlinefees                  
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/about">
+                    Airline
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/about">
+                    Low fare tips
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div className='w-full lg:w-2/12 px-0 lg:px-4 mb-10 lg:mb-0'>
+              <ul className='text-lg text-gray-500 flex gap-x-5 mb-5'>
+                <li>
+                  <a href='#' className='w-10 h-10 bg-white group overflow-hidden relative shadow-lg flex items-center justify-center rounded-full'>
+                    <span className='group-hover:opacity-100 opacity-0 z-10 transform rotate-0 group-hover:rotate-180 transition-all duration-300 bg-gradient-soccial absolute inset-0'></span>
+                    <span className='relative z-20'>
+                      <Facebook className="w-4 h-4 fill-black group-hover:fill-white transition-colors duration-300" />
+                    </span>
+                  </a>
+                </li>
+                <li>
+                <a href='#' className='w-10 h-10 bg-white group overflow-hidden relative shadow-lg flex items-center justify-center rounded-full'>
+                    <span className='group-hover:opacity-100 opacity-0 z-10 transform rotate-0 group-hover:rotate-180 transition-all duration-300 bg-gradient-soccial absolute inset-0'></span>
+                    <span className='relative z-20'>
+                      <Instagram className="w-4 h-4 fill-black group-hover:fill-white transition-colors duration-300" />
+                    </span>
+                  </a>
+                </li>
+                <li>
+                <a href='#' className='w-10 h-10 bg-white group overflow-hidden relative shadow-lg flex items-center justify-center rounded-full'>
+                    <span className='group-hover:opacity-100 opacity-0 z-10 transform rotate-0 group-hover:rotate-180 transition-all duration-300 bg-gradient-soccial absolute inset-0'></span>
+                    <span className='relative z-20'>
+                      <Twitter className="w-4 h-4 fill-black group-hover:fill-white transition-colors duration-300" />
+                    </span>
+                  </a>
+                </li>
+              </ul>
+              <h6 className='text-xl tracking-tight text-gray-500 mt-2 mb-7'>
+                Discover our app
+              </h6>
+              <ul className='flex gap-x-2'>
+                <li className='relative w-[107px] h-[35px]'>
+                  <a href='#' className='relative w-full h-full flex overflow-hidden rounded-full'>
+                    <Image 
+                      className='object-contain'
+                      layout="fill"
+                      width={170}
+                      height={35}
+                      src="/images/play-store.png"
+                    />
+                  </a>
+                </li>
+                <li className='relative w-[107px] h-[35px]'>
+                  <a href='#' className='relative w-full h-full flex overflow-hidden rounded-full'>
+                    <Image 
+                      className='object-contain'
+                      layout="fill"
+                      width={170}
+                      height={35}
+                      src="/images/app-store.png"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <h6 className='text-center text-gray-500 text-sm'>All rights reserved@radarbogor.id</h6>
+        </div>
+      </section>
 
     </div>
   )

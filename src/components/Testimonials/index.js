@@ -56,11 +56,11 @@ export default function Testimonials() {
   return (
     <section className='mb-32'>
         <div className='max-w-7xl mx-auto relative px-4'>
-          <div className='flex'>
-            <div className='w-6/12 pr-28'>
+          <div className='flex flex-wrap'>
+            <div className='w-full lg:w-6/12 pr-0 lg:pr-28'>
               <div className='flex flex-col mb-16'>
                 <h3 className='uppercase mb-2 text-gray-500'>Testimonials</h3>
-                <h3 className='font-serif text-5xl text-gray-900 leading-snug mb-10'>What people say
+                <h3 className='font-serif text-4xl lg:text-5xl text-gray-900 leading-tight lg:leading-snug mb-8'>What people say
                 about Us.
                 </h3>
                 <ul className='flex gap-x-6'>
@@ -80,8 +80,8 @@ export default function Testimonials() {
               </div>
             </div>
 
-            <div className='w-6/12 flex items-center justify-center relative'>
-                <div className='absolute -inset-10 -top-20'>
+            <div className='w-full lg:w-5/12 flex flex-wrap items-center justify-center relative h-[320px] lg:h-auto'>
+                <div className='absolute -inset-4 lg:-inset-10 lg:-top-20'>
                 <Swiper
                 modules={[
                     Navigation, 
@@ -112,7 +112,7 @@ export default function Testimonials() {
                         items.map((item) => {
                             return (
                                 <SwiperSlide key={item.id}>
-                                    <div className='relative px-32 pt-20 pb-48'>
+                                    <div className='relative px-12 lg:px-32 pt-10 lg:pt-20 pb-48'>
                                         <div className='relative'>
                                             <div className='bg-white shadow-great rounded-xl p-6 relative z-20'>
                                                 <span className='w-12 h-12 absolute top-0 left-0 overflow-hidden transform -translate-x-1/2 -translate-y-1/2 rounded-full flex-none mr-3'>
@@ -138,7 +138,7 @@ export default function Testimonials() {
                 </div>
             </div>
 
-            <div className='w-1/12 items-center justify-center flex'>
+            <div className='hidden lg:flex lg:w-1/12 items-center justify-center'>
                 <div className='flex flex-col'>
                     <button
                         onClick={fnPrev}
